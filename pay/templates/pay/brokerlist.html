@@ -1,1 +1,14 @@
-hello world
+<html>
+<head>
+    <title>List of Brokers</title>
+</head>
+<body>
+    <ul>
+        {% for broker in all_brokers %}
+            <li>
+                {{ broker.name }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
