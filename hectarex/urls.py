@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from pay import views
+
+# app_name = 'pay'
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+
+    url(r'^brokerlist/$', views.brokerlist, name='brokerlist'),
 ]
