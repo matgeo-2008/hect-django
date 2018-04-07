@@ -6,7 +6,9 @@
     <ul>
         {% for broker in all_brokers %}
             <li>
-                {{ broker.name }}
+                <a href="{% url 'pay:brokerprofile' broker.id %}">
+                    {{ broker.name }}
+                </a>
             </li>
         {% endfor %}
     </ul>
