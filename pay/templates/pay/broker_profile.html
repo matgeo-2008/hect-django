@@ -4,5 +4,13 @@
 </head>
 <body>
     hello! this is the profile of {{ broker.name }}
+    <ul>
+        <li>Email: {{ broker.email }}</li>
+        <li>Pan Number: {{ broker.pan_num }}</li>
+        <li>Bank Account Number: {{ broker.bank_acc_num }}</li>
+        <li>IFSC Code: {{ broker.ifsc }}</li>
+    </ul>
+    <br />
+    <a href="{% url 'pay:brokerlist' %}">Back</a>
 </body>
 </html>
