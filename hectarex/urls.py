@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
     url(r'^', include('pay.urls')),
+    url(r'^api/', include('pay.api.urls', namespace='pay-api')),
 ]
